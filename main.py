@@ -4,6 +4,7 @@ from ics import Calendar, Event
 import datetime
 import os
 import argparse
+import sys
 
 
 def writeToCalendarFile(filename, calendar):
@@ -18,11 +19,15 @@ def get_opts():
         description="A simple script to export CIS 4398 events to an importable .ics file",
         )
     parser.add_argument("filename", help="name of the .ics file")
-    parser.add_argument("-t", "--target", help="directory to create the file in (default: ./)")
+    parser.add_argument("-t", "--target", help="directory to create the file in (default: ./)", dest="target")
     return parser.parse_args()
 
 def main():
     args = get_opts()
+    # Extract filename from arguments
+    name = args.filename
+    target = args.target if args.target != None else "."
+    destination = target + "/" + name + ".ics"
 
     headers = {
         'Authorization': "Bearer {N9bjGKfycIBolbp0TbBL3cdaSWySJEbuuiwSZwfY}",
