@@ -13,7 +13,7 @@ Python 3.8,
 
 ### Installing
 
-Step 1: 
+Step 1: Write your applebaum API key to 
 
 ### Executing program
 
