@@ -3,19 +3,27 @@ import requests
 from ics import Calendar, Event
 import datetime
 import os
+import argparse
 
 
 def writeToCalendarFile(filename, calendar):
     with open(filename, 'w') as f:
         f.writelines(calendar.serialize_iter())
-
         calendar.serialize()
         f.close()
 
-def usage():
-    print("calexport file_name [-t <output_directory>]"
+def get_opts():
+    parser = argparse.ArgumentParser(
+        prog="calexport",
+        description="A simple script to export CIS 4398 events to an importable .ics file",
+        )
+    parser.add_argument("filename", help="name of the .ics file")
+    parser.add_argument("-t", "--target", help="directory to create the file in (default: ./)")
+    return parser.parse_args()
 
 def main():
+    args = get_opts()
+
     headers = {
         'Authorization': "Bearer {N9bjGKfycIBolbp0TbBL3cdaSWySJEbuuiwSZwfY}",
         'Content-Type': "application/json",
@@ -34,11 +42,9 @@ def main():
     cal = Calendar()
 
     current_time = datetime.datetime.now()
-    # print(current_time)
 
     # Loop through events and add them to the calendar
     for event_data in events_data:
-        # print(event_data, "\n")
         event = Event()
         event.name = event_data["event_name"]
         event.begin = event_data['event_date']
