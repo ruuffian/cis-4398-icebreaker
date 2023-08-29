@@ -34,6 +34,7 @@ Alan Uthuppan
 Cynthia To
 Liam Mackay
 Andy Olshanky
+Regina Oda
 
 
 ## License
