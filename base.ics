@@ -1,0 +1,125 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Students will have 2 min each to present their project ideas. There will be no time in class for questions/feedback. This will be reserved to Discord and the feedback assignment so take notes! 📝
+DTSTART:20230906T000000Z
+SUMMARY:Elevator Pitch
+UID:6f665742-7078-4d80-8a6d-f625c7019cd4@6f66.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231113T000000Z
+SUMMARY:Sprint 5
+UID:2bcefaad-3811-427e-b005-99d8b76f8e69@2bce.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20231030T000000Z
+SUMMARY:Milestone Demo 1
+UID:fcd442c7-246e-459c-aef3-c42dcc3d13c7@fcd4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:A requirements gathering workshop to help quickly identify what happens in the domain of your project. We will use the online whiteboard Miro\, and work with guest stakeholders.
+DTSTART:20230915T000000Z
+SUMMARY:Event Storming
+UID:35a9d46e-f491-41fc-8caf-eab7e2685456@35a9.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:1 Week Practice Sprint
+DTSTART:20230911T000000Z
+SUMMARY:Sprint 0
+UID:e34c3373-7343-4a16-ab90-75d61161c5d0@e34c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:First day of class we'll get to know each other with a small "hackathon" activity
+DTSTART:20230828T000000Z
+SUMMARY:Syllabus/Ice Breaker
+UID:a6033009-bcc0-4089-8a3e-0db7884762c3@a603.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231204T000000Z
+SUMMARY:Sprint 6
+UID:bdec666c-75fc-4390-8b66-9a84c35030ab@bdec.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will learn how to pitch an enticing project idea.
+DTSTART:20230830T000000Z
+SUMMARY:How to pitch an idea
+UID:f15ed42d-aa89-4421-b6f0-37e14ca9ac21@f15e.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231016T000000Z
+SUMMARY:Sprint 3
+UID:8c8689fa-b7fc-4502-81b6-cd2603ca35d9@8c86.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:First 2 week sprint.
+DTSTART:20230918T000000Z
+SUMMARY:Sprint 1
+UID:215a4af2-0664-4dc5-8ea0-1ace0cadd277@215a.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231030T000000Z
+SUMMARY:Sprint 4
+UID:2196e230-02c5-4be6-ac1d-d204e718d01f@2196.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will work on drawing System Block Diagrams\, and review Use Case Diagrams.
+DTSTART:20230920T000000Z
+SUMMARY:System Block Diagram and Use Cases
+UID:95981496-7314-4183-920f-f9f1322ef35a@9598.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will learn about project planning\, management\, and the tools we will use to help manage complex software projects Jira.
+DTSTART:20230918T000000Z
+SUMMARY:Software Project Planning and Tools
+UID:5000c0bf-d5ab-4a1b-86e3-4fef808abc06@5000.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:We will learn what tools are out there for building great capstone projects. We will also talk about what solving problems and avoiding picking technology for technology sake. We will also introduce the documentation tool that will be used throughout the semester.
+DTSTART:20230901T000000Z
+SUMMARY:Project Brainstorming and Intro to Docusaurus
+UID:19b175c2-8ff0-4a7f-a661-08ed46310eb9@19b1.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Have a great break! See you at graduation!
+DTSTART:20231222T000000Z
+SUMMARY:Final Grade Submissions 🎓
+UID:93b62880-b80d-4ea3-ab35-a3f5e84fae8c@93b6.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:It's the big day! Faculty\, Students\, and specially appointed industry guests will get the chance to see your work all finalized.
+DTSTART:20231211T000000Z
+SUMMARY:Final Presentation & Demo
+UID:423dfc48-0bb6-4cf7-afea-e19c5b076fd3@423d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20231113T000000Z
+SUMMARY:Milestone Demo 2
+UID:7b7950b9-557f-481c-80b1-557d746503c8@7b79.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Now that we've seen the individual project pitches\, we'll make time to interview potential teammates and ask questions. Students will vote on the projects they want to work on.
+DTSTART:20230908T000000Z
+SUMMARY:Project Voting and Team Formation
+UID:a420d556-3aa6-4023-9d97-ac7d8f3454d1@a420.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Monday\, November 20 - Wednesday\, November 22 Fall Break (no classes held) Thursday\, November 23 - Sunday\, November 26 Thanksgiving holiday (no classes held)
+DTSTART:20231120T000000Z
+SUMMARY:Fall Break (no classes held)
+UID:7554d901-5766-4a9c-86ce-0aae20391205@7554.org
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231002T000000Z
+SUMMARY:Sprint 2
+UID:29335085-2ad1-4b17-9519-db99ac9194bb@2933.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Every two weeks in the construction phase you will be asked to present your progress on the project. These demos should present use cases and user stories with a live demo. Each demo should be presented as if to a real customer. This means the demos should be non-technical. You will not be presenting code. The first three milestone demos should help you prepare for the final milestone demo where you will present the whole project.
+DTSTART:20231204T000000Z
+SUMMARY:Milestone Demo 3
+UID:a177f1a8-0411-4881-9a40-7f8cce2677a2@a177.org
+END:VEVENT
+END:VCALENDAR

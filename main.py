@@ -4,7 +4,6 @@ from ics import Calendar, Event
 import datetime
 import os
 import argparse
-import sys
 
 
 def writeToCalendarFile(filename, calendar):
@@ -60,19 +59,19 @@ def main():
     # First time this is run, create a base to compare to in the future
     try:
         if not os.path.exists('base.ics'):
+            writeToCalendarFile(destination, cal)
             writeToCalendarFile('base.ics', cal)
 
         # if the base file exists, create a new file and compare it to the base
         else:
-            writeToCalendarFile('my.ics', cal)
-            isSame = filecmp.cmp('base.ics', 'my.ics', shallow=False)
+            writeToCalendarFile(destination, cal)
+            isSame = filecmp.cmp('base.ics', destination, shallow=False)
             # if the base is not the same as the new file:
             # remove the old base
             # rename the new base
             # send an email notification
             if not isSame:
-                os.remove('base.ics')
-                os.rename('my.ics', 'base.ics')
+                writeToCalendarFile("base.ics", cal)
                 print("The calendar has changed!")
                 # Send an email notification
 
