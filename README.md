@@ -49,3 +49,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Inspiration, code snippets, etc.
 * [README Template](https://github.com/matiassingers/awesome-readme)
+* [getopt Documentation](https://docs.python.org/3/library/getopt.html)
