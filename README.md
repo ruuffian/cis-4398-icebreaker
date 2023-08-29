@@ -31,9 +31,13 @@ calexport {-h|--help}
 ## Authors
 
 Alan Uthuppan
+
 Cynthia To
+
 Liam Mackay
+
 Andy Olshanky
+
 Regina Oda
 
 
