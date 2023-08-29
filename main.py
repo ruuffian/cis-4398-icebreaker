@@ -44,22 +44,27 @@ for event_data in events_data:
 
 # Export the calendar to a file
 # First time this is run, create a base to compare to in the future
-if not os.path.exists('base.ics'):
-    writeToCalendarFile('base.ics', cal)
+try:
+    if not os.path.exists('base.ics'):
+        writeToCalendarFile('base.ics', cal)
 
-# if the base file exists, create a new file and compare it to the base
-else:
-    writeToCalendarFile('my.ics', cal)
-    isSame = filecmp.cmp('base.ics', 'my.ics', shallow=False)
-    # if the base is not the same as the new file:
-    # remove the old base
-    # rename the new base
-    # send an email notification
-    if not isSame:
-        os.remove('base.ics')
-        os.rename('my.ics', 'base.ics')
-        print("The calendar has changed!")
-        # Send an email notification
-
+    # if the base file exists, create a new file and compare it to the base
     else:
-        print("Same calendar :)")
+        writeToCalendarFile('my.ics', cal)
+        isSame = filecmp.cmp('base.ics', 'my.ics', shallow=False)
+        # if the base is not the same as the new file:
+        # remove the old base
+        # rename the new base
+        # send an email notification
+        if not isSame:
+            os.remove('base.ics')
+            os.rename('my.ics', 'base.ics')
+            print("The calendar has changed!")
+            # Send an email notification
+
+        else:
+            print("Same calendar :)")
+
+except UnicodeEncodeError:
+    print("In error")
+    pass
