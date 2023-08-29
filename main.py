@@ -12,7 +12,8 @@ def writeToCalendarFile(filename, calendar):
         calendar.serialize()
         f.close()
 
-
+def usage():
+    print("calexport file_name [-t <output_directory>]"
 headers = {
     'Authorization': "Bearer {N9bjGKfycIBolbp0TbBL3cdaSWySJEbuuiwSZwfY}",
     'Content-Type': "application/json",
