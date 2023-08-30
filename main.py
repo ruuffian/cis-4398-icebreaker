@@ -36,14 +36,16 @@ phases = [
 ]
 
 # Add the phases as events to the calendar
+'''
 for phase in phases:
     phase_event = Event()
     phase_event.name = phase["name"]
     phase_event.begin = datetime.strptime(phase["date"], "%m/%d/%Y")
     cal.events.add(phase_event) 
+'''
 
 #print(events_data)    
-print(cal)    
+#print(cal)    
 
 # Save the calendar to a file
 with open('my.ics', 'w') as f:
