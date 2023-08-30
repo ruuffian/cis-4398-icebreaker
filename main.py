@@ -1,10 +1,21 @@
 import filecmp
 import requests
-from ics import Calendar, Event
 import datetime
 import os
 import argparse
+from ics import Calendar, Event
+from dotenv import load_dotenv
 import pytz
+
+
+load_dotenv()
+#environment varibales
+
+
+API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+API = os.getenv("API")
+
 
 
 def writeToCalendarFile(filename, calendar):
@@ -30,13 +41,13 @@ def main():
     destination = target + "/" + name + ".ics"
 
     headers = {
-        'Authorization': "Bearer {N9bjGKfycIBolbp0TbBL3cdaSWySJEbuuiwSZwfY}",
+        'Authorization': f"Bearer {API_KEY}",
         'Content-Type': "application/json",
         'Accept': "application/json"
     }
 
-    base_url = "https://courses.ianapplebaum.com"
-    api = "/syllabus/4"
+    base_url = BASE_URL
+    api = API
 
     response = requests.get(base_url + api, headers=headers)
     data = response.json()
@@ -58,6 +69,7 @@ def main():
     {"name": "Construction Phase", "date": ("10/15/2023", "12/17/2023")}
     ]
     
+
     # Loop through events and add them to the calendar
     for event_data in events_data:
         event = Event()
@@ -79,7 +91,7 @@ def main():
                 break 
         
         cal.events.add(event)
-    
+
     # Export the calendar to a file
     # First time this is run, create a base to compare to in the future
     try:
