@@ -1,6 +1,6 @@
 # calexport
 
-A simple python script which automatically exports CIS 4398 assignments as an iCal file.
+A simple Python script that automatically exports CIS 4398 assignments as an iCal file.
 
 
 ## Getting Started
@@ -11,9 +11,9 @@ Python 3.8, pytz 2023.3, python-dotenv
 
 ### Installing
 
-Step 1: After cloning the repository, run `pip3 install -r requirements.txt` to install the project dependencies.
-Step 2: Inside .env.dev, replace YOUR_TOKEN_HERE with your ianapplebaum API token.
-Step 3: Rename .env.dev to .env
+Step 1: After cloning the repository, run `pip3 install -r requirements.txt` to install the project dependencies.<br />
+Step 2: Inside .env.dev, replace YOUR_TOKEN_HERE with your ianapplebaum API token.<br />
+Step 3: Rename .env.dev to .env<br /><br />
 Now, you're ready to convert the CIS 4398 schedule into a .ics file!
 
 ### Executing program
