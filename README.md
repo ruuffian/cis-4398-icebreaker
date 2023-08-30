@@ -2,24 +2,25 @@
 
 A simple python script which automatically exports CIS 4398 assignments as an iCal file.
 
-## Description
-
 
 ## Getting Started
 
 ### Dependencies
 
-Python 3.8, 
+Python 3.8, pytz 2023.3, python-dotenv 
 
 ### Installing
 
-Step 1: Write your applebaum API key to 
+Step 1: After cloning the repository, run `pip3 install -r requirements.txt` to install the project dependencies.
+Step 2: Inside .env.dev, replace YOUR_TOKEN_HERE with your applebaumian API token.
+Step 3: Rename .env.dev to .env
+Now, you're ready to convert the CIS 4398 schedule into a .ics file!
 
 ### Executing program
 
 Usage:
 ```
-calexport -t <output_directory> [-o <file_name>]
+calexport file_name [-t <target_directory>]
 ```
 
 ## Help
@@ -49,4 +50,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 Inspiration, code snippets, etc.
 * [README Template](https://github.com/matiassingers/awesome-readme)
-* [getopt Documentation](https://docs.python.org/3/library/getopt.html)
+* [argparse Documentation](https://docs.python.org/3/library/argparse.html)
